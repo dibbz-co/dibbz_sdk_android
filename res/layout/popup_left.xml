@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popupView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:clickable="true" >
+
+    
+    <RelativeLayout
+        android:id="@+id/popupRibbon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/popupRewardLogo"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/popupRibbonLeftArtwork"
+            android:layout_width="282dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/img_dibbzribbonleft" />
+
+		<RelativeLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="45dp">
+		    
+		    <TextView
+            android:id="@+id/popupRewardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/almost_black"
+            android:textSize="13sp" />
+		    
+		    <TextView
+            android:id="@+id/popupRewardMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/popupRewardTitle"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+		    
+		    
+		</RelativeLayout>
+        
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/popupRewardLogo"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ribbon_logo_background"
+        android:scaleType="fitXY"
+        />
+
+</RelativeLayout>

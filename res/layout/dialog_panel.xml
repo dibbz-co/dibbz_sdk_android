@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_panel"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/dialog_layer_background"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/dialogRedeemSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/dialogRedeemEmailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dialogEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/dialogGiftArea"
+                android:background="@drawable/email_field"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="13sp" >
+
+                <requestFocus android:layout_width="wrap_content" />
+            </EditText>
+
+            <FrameLayout
+                android:id="@+id/dialogGiftArea"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_toLeftOf="@+id/dialogRedeemButton"
+                android:background="@color/light_gray"
+                android:padding="3dp" >
+
+                <ImageButton
+                    android:id="@+id/dialogGiftButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_gift" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/dialogRedeemButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/email_button"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dialogFormHelpText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dialogRedeemEmailField"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/almost_black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialogSingleButtonSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/dialogSingleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/button_orange"
+            android:minWidth="200dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/dialogSingleButtonHelperText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/dialogSingleButton"
+            android:textColor="@color/almost_black"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialogRedeemSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/dialogRedeemingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/almost_black"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialogCongratsSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/dialogCongratsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/dibbz_orange"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialogCongratsMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialogCongratsTitle"
+            android:gravity="center"
+            android:textColor="@color/almost_black"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/dialogDibbzLogo"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/txt_dibbz_engraved" />
+
+        <TextView
+            android:id="@+id/dialogPrivacyAndTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="bottom|right"
+            android:textColor="@color/almost_black"
+            android:textSize="12sp" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

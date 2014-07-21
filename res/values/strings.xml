@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Dibbz SDK</string>
+
+    <!-- MUST OVERWRITE THESE IN PARENT PROJECT -->
+    <string name="dibbz_api_key"></string>
+</resources>

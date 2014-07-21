@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="snow_white">#FFf7f6f2</color>
+    <color name="almost_black">#FF212121</color>
+    <color name="light_gray">#FFCCCCCC</color>
+    <color name="dibbz_orange">#FFF26522</color>
+    <color name="merchant_band_bg">#77000000</color>
+    <color name="error_red">#FFf15f5f</color>
+
+</resources>

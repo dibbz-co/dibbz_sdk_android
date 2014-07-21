@@ -1,4 +1,6 @@
-dibbz_sdk_android
+Dibbz SDK for Android Integration Guide
 =================
 
-Dibbz SDK for Android
+Please refer to the Dibbz website for further information.
+
+http://dibbz.co
